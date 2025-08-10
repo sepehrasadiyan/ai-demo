@@ -1,0 +1,15 @@
+summarizer:
+  default-provider: OPENAI
+
+ai:
+  openai:
+    api-key: ${OPENAI_API_KEY:token}
+    base-url: ${OPENAI_BASE_URL:https://ai.liara.ir/api/v1/688a0f7c3d0c49e74e3627c8}
+    model: ${OPENAI_BASE_MODEL:openai/gpt-4o-mini}
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://root:SecureMongoRoot123!@localhost:27017/ai_demo?authSource=admin"
+      uuid-representation: standard
+      auto-index-creation: true
